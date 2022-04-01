@@ -2,7 +2,7 @@
 //  PhotoManger.h
 //  Unity-iPhone
 //
-//  Created by 李俊逸 on 2019/5/29.
+//  Created by TomHsiao on 2019/5/29.
 //
 
 #ifndef PhotoManger_h
