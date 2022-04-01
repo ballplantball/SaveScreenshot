@@ -36,7 +36,7 @@ public class ScreenShotIOS : MonoBehaviour
 
     private IEnumerator CaptureByCamera(Camera mCamera, Rect mRect, string mFileName)
     {
-        //等待渲染线程结束  
+        //wait render
         yield return new WaitForEndOfFrame();
         mRender = new RenderTexture(Screen.width, Screen.height, 16);
         mCamera.targetTexture = mRender;
@@ -48,7 +48,7 @@ public class ScreenShotIOS : MonoBehaviour
         mCamera.targetTexture = null;
         RenderTexture.active = null;
         GameObject.Destroy(mRender);
-        //保存
+        //saving
         byte[] bytes = mTexture.EncodeToPNG();
         ScreenshotManager.SaveImage(mTexture, mFileName, "jpg");
         System.IO.File.WriteAllBytes(mFileName, bytes);
