@@ -2,7 +2,7 @@
 //  PhotoManger.m
 //  Unity-iPhone
 //
-//  Created by 李俊逸 on 2019/5/29.
+//  Created by TomHsiao on 2019/5/29.
 //
 
 #import "PhotoManager.h"
